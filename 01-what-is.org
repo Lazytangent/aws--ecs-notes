@@ -18,3 +18,46 @@ There are three layers in Amazon ECS:
   deploy and manage your applications and containers
 
 ** Amazon ECS capacity
+Amazon ECS capacity is the infrastructure where your containers run. The
+following is an overview of the capacity options:
+- Amazon ECS instances in the AWS cloud
+  - You choose the instance type, the number of instances, and manage the
+    capacity
+- Serverless (AWS Fargate (Fargate)) in the AWS cloud
+  - Fargate is a serverless, pay-as-you-go compute engine. With Fargate you
+    don't need to manage servers, handle capacity planning, or isolate container
+    workloads for security
+- On-premises virtual machines (VM) or serveres
+  - Amazon ECS Anywhere provides support for registering an external instance
+    such as an on-premises server or virtual machine (VM), to your Amazon ECS
+    cluster.
+
+The capacity can be located in any of the following AWS resources:
+- Availability Zones
+- Local Zones
+- Wavelength Zones
+- AWS Regions
+- AWS Outposts
+
+** Amazon ECS controller
+The Amazon ECS scheduler is the software that manages your applications.
+
+** Amazon ECS provisioning
+There are multiple options for provisioning Amazon ECS:
+- AWS Management Console :: Provides a web interface that you can use to access
+  your Amazon ECS resources.
+- AWS Command Line Interface (AWS CLI) :: Provides commands for a broad set of
+  AWS services, including Amazon ECS. It's supported on Windows, Mac, and
+  Linux. For more information, see AWS Command Line Interface.
+- AWS SDKs :: Provides language-specific APIs and takes care of many of the
+  connection details. These include calculating signatures, handling request
+  retries, and error handling. For more information, see AWS SDKs.
+- Copilot :: Provides an open-source tool for developers to build, release, and
+  operate production ready containerized applications on Amazon ECS. For more
+  information, see Copilot on the GitHub website.
+- AWS CDK :: Provides an open-source software development framework that you can
+  use to model and provision your cloud application resources using familiar
+  programming languages. The AWS CDK provisions your resources in a safe,
+  repeatable manner through AWS CloudFormation.
+
+* Application lifecycle
